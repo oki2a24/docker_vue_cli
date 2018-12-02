@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: ./node
+      args:
+        NODE_VERSION: 'latest'
+        VUE_CLI_VERSION: ''
+        VUE_CLI_SERVICE_GLOBAL_VERSION: ''
+    volumes:
+      - ../app:/app
+
