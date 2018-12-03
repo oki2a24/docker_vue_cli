@@ -35,3 +35,11 @@ vue serve hello.vue
 ```
 
 その後、Docker ホストマシンで、ウェブブラウザから http://localhost へアクセスし、ページが表示されることを確認してください。
+
+## 補足
+コンテナ起動後、コンテナに入らないで次のように操作することも可能です。
+
+```bash
+docker-compose up -d
+docker-compose exec node vue serve hello.vue
+ ```
